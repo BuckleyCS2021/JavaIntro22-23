@@ -1,1 +1,1 @@
-johnny i will get revenge.
+i woke up in a new bugatti
