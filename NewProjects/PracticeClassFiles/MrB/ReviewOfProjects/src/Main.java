@@ -5,7 +5,7 @@ public class Main {
         // Press ⌥⏎ with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         System.out.println("This is to test the right way to create in IntelliJ and then ");
-        System.out.println("commit and push to the github directory");
+        System.out.println("commit and push to the github directory.");
 
     }
 }
