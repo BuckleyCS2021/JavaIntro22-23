@@ -5,6 +5,7 @@ public class Main {
         // Press ⌥⏎ with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         System.out.println("I created a Java.class file");
+        System.out.println("New text :)");
 
     }
 }
