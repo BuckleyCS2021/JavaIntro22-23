@@ -1,5 +1,6 @@
 import cv2 as cv
 from PIL import Image
+from io import StringIO
 
 cap = cv.VideoCapture(0)
 if not cap.isOpened():
@@ -36,22 +37,26 @@ def toArt(image):
     ascii_chars = ''.join(ascii_chars)
 
     # Print the ASCII art to the console
+    output = StringIO()
     for i in range(0, len(ascii_chars), new_width):
-        print(ascii_chars[i:i + new_width])
+        output.write("\n")
+        output.write(ascii_chars[i:i + new_width])
+    return output.getvalue()
+
 while True:
     # Boilerplate Code
     ret, frame = cap.read()
     if not ret:
         print("Can't receive frame (stream end?). Exiting ...")
         break
-    if cv.waitKey(1) == 27:
+    if cv.waitKey(1) == 27:  # ESC
         break
 
     img = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
     img_pil = Image.fromarray(img)
 
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-    toArt(img_pil)
+    print(toArt(img_pil))
 
 
 # When everything done, release the capture
