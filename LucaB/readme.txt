@@ -99997,4 +99997,4 @@ you made it to 10k. well done!
 
 
 
-you made it to the end!! well done!!
+you made it to the end!! well done!! if you used the side bar, you cheated!!!
