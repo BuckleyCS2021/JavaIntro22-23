@@ -6,9 +6,9 @@ I woke up in a new bugatti.
 
 
 
-let's play a little game.
-I wonder how long you can scroll down for.
-
+let's play a little game!
+I wonder how long you can scroll down for :)
+good luck.
 
 
 
