@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String[] fruits = {"a", "b", "c", "d"};
+        for(String i : fruits) {
+            System.out.println(i);
+        }
     }
 }
