@@ -6,6 +6,6 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.println("I created a java.class file");
         System.out.println("Making some changes to make this easier to remember");
-
+        System.out.println("Making even more changes to make this easier to remember");
     }
 }
