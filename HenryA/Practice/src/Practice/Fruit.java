@@ -74,7 +74,7 @@ public class Fruit {
                         }
 
                         else {
-                            System.out.println("That's not an acceptable answer, please type exactly whats in the perentheses");
+                            System.out.println("That's not an acceptable answer, please type exactly whats in the parentheses");
                         }
                     }
                 }
