@@ -1,7 +1,7 @@
 package Practice;
 
 public class Multiply {
-    int value1,  int value2;
+    int value1; int value2;
 
     Multiply(){
 
