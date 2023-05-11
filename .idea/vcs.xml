@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/NewProjects/HelloWorldProjects/JavaIntro22-23" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NewProjects/HelloWorldProjects/JonathanK/HelloWorld" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NewProjects/HelloWorldProjects/JonathanK/Hello_World" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NewProjects/HelloWorldProjects/JonathanK/math.java" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/NewProjects/HelloWorldProjects/ryanf/Hello_World" vcs="Git" />
   </component>
 </project>
