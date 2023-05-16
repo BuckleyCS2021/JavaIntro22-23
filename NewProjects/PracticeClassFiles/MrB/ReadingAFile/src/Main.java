@@ -1,3 +1,4 @@
+// this is from a teacher
 import java.util.Scanner;
 import java.util.Arrays;
 import java.io.File;
