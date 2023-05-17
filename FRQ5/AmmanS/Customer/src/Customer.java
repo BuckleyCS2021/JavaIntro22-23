@@ -1,4 +1,5 @@
-Public class Customer{
+public class Customer
+{
 
     private static int nextAccNum= 1;
     private String name;
