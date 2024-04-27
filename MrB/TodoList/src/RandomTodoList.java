@@ -17,9 +17,13 @@ public class RandomTodoList {
         todoList.add(item);
     }
     public void printListNow() {
+        System.out.println("This is the Todo list");
         for (int k = 0; k < todoList.size(); k++) {
-            System.out.println(todoList.get(k));
-            System.out.println(completedItems.get(k));
+            System.out.println(k + todoList.get(k));
+        }
+        System.out.println("This is the completed list");
+        for (int k=0; k< completedItems.size(); k++){
+            System.out.println(k + completedItems.get(k));
         }
     }
     public void printRandomItem() {
@@ -30,6 +34,7 @@ public class RandomTodoList {
 
         if (completedItems.size() == todoList.size()) {
             System.out.println("You have completed all the tasks in your todo list!");
+            System.exit(0);
             return;
         }
 
@@ -69,7 +74,6 @@ public class RandomTodoList {
             todoListManager.printListNow();
             System.out.println("\nEnter 'print' to get a random item, or 'exit' to quit:");
 
-            System.out.println("\nEnter 'print' to get a random item, or 'exit' to quit:");
 
             input = scanner.nextLine().trim();
 
