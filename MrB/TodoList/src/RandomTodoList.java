@@ -6,11 +6,13 @@ public class RandomTodoList {
     private ArrayList<String> todoList;
     private ArrayList<String> completedItems;
     private Random random;
+    private static int count =0;
 
     public RandomTodoList() {
         todoList = new ArrayList<>();
         completedItems = new ArrayList<>();
         random = new Random();
+
     }
 
     public void addTodoItem(String item) {
@@ -27,13 +29,10 @@ public class RandomTodoList {
         }
     }
     public void printRandomItem() {
-        if (todoList.isEmpty()) {
+        if (count == 1) {
             System.out.println("Todo list is empty!");
-            return;
-        }
-
-        if (completedItems.size() == todoList.size()) {
             System.out.println("You have completed all the tasks in your todo list!");
+            System.out.println(count);
             System.exit(0);
             return;
         }
@@ -47,6 +46,9 @@ public class RandomTodoList {
 
         System.out.println("Random Todo Item: " + randomItem);
         completedItems.add(randomItem);
+        todoList.remove(randomItem);
+        count--;
+        System.out.println(count);
     }
 
 
@@ -59,6 +61,7 @@ public class RandomTodoList {
 
         String input;
         while (true) {
+            count++;
             input = scanner.nextLine().trim();
             if (input.equalsIgnoreCase("done")) {
                 break;
@@ -72,14 +75,14 @@ public class RandomTodoList {
         while (true) {
             // Print the todo list each time before asking for user input
             todoListManager.printListNow();
-            System.out.println("\nEnter 'print' to get a random item, or 'exit' to quit:");
+            System.out.println("\nEnter 'd' to get a random item, or 'exit' to quit:");
 
 
             input = scanner.nextLine().trim();
 
             if (input.equalsIgnoreCase("exit")) {
                 break;
-            } else if (input.equalsIgnoreCase("print")) {
+            } else if (input.equalsIgnoreCase("d")) {
                 todoListManager.printRandomItem();
             } else {
                 System.out.println("Invalid command! Please enter 'print' or 'exit'.");
